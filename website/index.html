@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShieldBrain – Reels Counter &amp; Shorts Blocker for Android</title>
+<meta name="description" content="ShieldBrain counts every Reel, Short and TikTok you scroll, then blocks the short-video feed on Instagram, YouTube, TikTok, Facebook and Snapchat — without blocking the whole app. Free, 100% private, Android.">
+<link rel="canonical" href="https://shieldbrain.app/">
+<link rel="icon" type="image/png" href="images/shieldbrain-app-icon.png">
+<link rel="apple-touch-icon" href="images/shieldbrain-app-icon.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preload" as="image" href="images/shieldbrain-reels-counter-dashboard.png">
+<meta name="theme-color" content="#000000">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ShieldBrain">
+<meta property="og:title" content="ShieldBrain – Reels Counter &amp; Shorts Blocker for Android">
+<meta property="og:description" content="Count every Reel, Short and TikTok you scroll — then block the endless feed on Instagram, YouTube, TikTok, Facebook and Snapchat without blocking the whole app.">
+<meta property="og:url" content="https://shieldbrain.app/">
+<meta property="og:image" content="https://shieldbrain.app/images/shieldbrain-reels-counter-dashboard.png">
+<meta property="og:image:alt" content="ShieldBrain app dashboard showing 38 reels scrolled today, about 49 minutes of the day">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ShieldBrain – Reels Counter &amp; Shorts Blocker for Android">
+<meta name="twitter:description" content="See how many Reels and Shorts you really scroll — then block the feed, not the app. 100% private, on-device.">
+<meta name="twitter:image" content="https://shieldbrain.app/images/shieldbrain-reels-counter-dashboard.png">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://shieldbrain.app/#organization",
+      "name": "LunarForge Labs",
+      "url": "https://shieldbrain.app/",
+      "logo": "https://shieldbrain.app/images/shieldbrain-app-icon.png",
+      "email": "shieldbrain.app@gmail.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://shieldbrain.app/#website",
+      "url": "https://shieldbrain.app/",
+      "name": "ShieldBrain",
+      "publisher": { "@id": "https://shieldbrain.app/#organization" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://shieldbrain.app/#webpage",
+      "url": "https://shieldbrain.app/",
+      "name": "ShieldBrain – Reels Counter & Shorts Blocker for Android",
+      "isPartOf": { "@id": "https://shieldbrain.app/#website" },
+      "about": { "@id": "https://shieldbrain.app/#app" },
+      "primaryImageOfPage": "https://shieldbrain.app/images/shieldbrain-reels-counter-dashboard.png",
+      "inLanguage": "en"
+    },
+    {
+      "@type": ["SoftwareApplication", "MobileApplication"],
+      "@id": "https://shieldbrain.app/#app",
+      "name": "ShieldBrain – Reels Counter & Shorts Blocker",
+      "operatingSystem": "Android",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Digital wellbeing / screen-time app",
+      "description": "ShieldBrain is an Android app that counts every Instagram Reel, YouTube Short, TikTok, Facebook Reel and Snapchat Spotlight video you scroll through, and blocks the short-video feed on each platform without blocking the whole app. It works 100% on-device with no account and no data collection.",
+      "image": "https://shieldbrain.app/images/shieldbrain-app-icon.png",
+      "screenshot": [
+        "https://shieldbrain.app/images/shieldbrain-reels-counter-dashboard.png",
+        "https://shieldbrain.app/images/shieldbrain-weekly-trends-chart.png",
+        "https://shieldbrain.app/images/shieldbrain-brain-report-card.png"
+      ],
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@id": "https://shieldbrain.app/#organization" },
+      "url": "https://shieldbrain.app/",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.LunarForgeLabs.ShieldBrain",
+      "releaseNotes": "Public Google Play launch: late July 2026 (currently in closed testing).",
+      "featureList": [
+        "Reels counter: live daily and lifetime count of Reels, Shorts and TikToks scrolled",
+        "Shorts blocker: blocks the short-video feed only, not the whole app",
+        "Supports Instagram Reels, YouTube Shorts, TikTok, Facebook Reels and Snapchat Spotlight",
+        "Per-app scroll breakdown and weekly/monthly trends",
+        "Shareable weekly Brain Report Card",
+        "100% on-device, no account, no ads, no data collection"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://shieldbrain.app/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is ShieldBrain?",
+          "acceptedAnswer": { "@type": "Answer", "text": "ShieldBrain is a free Android app that counts how many Reels, Shorts and TikToks you scroll through each day, and blocks the short-video feed on Instagram, YouTube, TikTok, Facebook and Snapchat. It blocks only the addictive feed — DMs, stories, search and normal videos keep working." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ShieldBrain block the whole app?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. ShieldBrain blocks only the short-video surface: the Reels feed on Instagram and Facebook, the Shorts feed on YouTube, the endless scroll on TikTok, and Spotlight on Snapchat. Everything else in each app — messages, stories, subscriptions, normal videos — works normally." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which platforms does ShieldBrain support?",
+          "acceptedAnswer": { "@type": "Answer", "text": "ShieldBrain counts and blocks short-form video on five platforms: Instagram Reels, YouTube Shorts, TikTok, Facebook Reels and Snapchat Spotlight. Each platform can be toggled on or off individually with one tap." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is ShieldBrain private? Does it collect my data?",
+          "acceptedAnswer": { "@type": "Answer", "text": "ShieldBrain runs 100% on your device. It requires no account and no sign-up, and it does not collect, store, sell or transmit any personal data. The Android Accessibility Service is used strictly to detect short-form video feeds and count scrolls." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does ShieldBrain need the Accessibility Service?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Android's Accessibility Service is the only reliable way for an app to detect when a short-video feed like Reels or Shorts is on screen. ShieldBrain uses it solely to recognise those feeds, count your scrolls and show the block screen. No data leaves your phone." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is ShieldBrain available on iPhone (iOS)?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. ShieldBrain is an Android-only app because it relies on Android's Accessibility Service to detect and block short-video feeds. There is currently no iOS version." }
+        },
+        {
+          "@type": "Question",
+          "name": "When does ShieldBrain launch on Google Play?",
+          "acceptedAnswer": { "@type": "Answer", "text": "ShieldBrain is currently in closed testing and launches publicly on Google Play in late July 2026." }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time can ShieldBrain save me?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Most heavy short-video users spend one to three hours a day scrolling. As a reference point from the app itself, 38 reels equals roughly 49 minutes of watch time. Counting your scrolls first shows exactly how much time you stand to recover, then blocking the feeds returns that time to you." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/">
+      <img src="images/shieldbrain-app-icon.png" alt="ShieldBrain app icon: Brainy the pink brain inside a green shield" width="36" height="36">
+      ShieldBrain
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="guides/">Guides</a>
+      <a href="blog/">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.LunarForgeLabs.ShieldBrain" rel="noopener">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <div>
+        <p class="badge"><span class="dot" aria-hidden="true"></span> Launching on Google Play · late July 2026</p>
+        <h1>Count every reel you scroll.<br><span class="accent">Then block the feed.</span></h1>
+        <p class="subtitle">ShieldBrain is a free <strong>reels counter and shorts blocker for Android</strong>. It shows you exactly how many Reels, Shorts and TikToks you scroll each day — then blocks the endless short-video feed on Instagram, YouTube, TikTok, Facebook and Snapchat <strong>without blocking the whole app</strong>.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.LunarForgeLabs.ShieldBrain" rel="noopener">Download for Android</a>
+          <a class="btn btn-secondary" href="#how-it-works">See how it works</a>
+        </div>
+        <p class="hero-note">Free · No account · No ads · 100% on-device · Android only</p>
+        <ul class="platform-strip" aria-label="Supported platforms">
+          <li>Instagram Reels</li>
+          <li>YouTube Shorts</li>
+          <li>TikTok</li>
+          <li>Facebook Reels</li>
+          <li>Snapchat Spotlight</li>
+        </ul>
+      </div>
+      <div class="hero-phone">
+        <img src="images/shieldbrain-reels-counter-dashboard.png"
+             alt="ShieldBrain Today dashboard on Android showing 38 reels scrolled, about 49 minutes of the day, with a per-app breakdown for Instagram, YouTube Shorts, TikTok, Facebook and Snapchat Spotlight"
+             width="942" height="1671" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT IS SHIELDBRAIN (GEO entity block) ============ -->
+  <section class="alt" id="what-is-shieldbrain">
+    <div class="container narrow">
+      <p class="kicker">What is ShieldBrain?</p>
+      <h2>A reels counter and a shorts blocker. Two things, done right.</h2>
+      <p style="margin-top:16px">ShieldBrain is an Android digital-wellbeing app made by LunarForge Labs. It does exactly two things: it <strong>counts</strong> every short-form video (Reel, Short, TikTok, Spotlight) you scroll through, and it <strong>blocks</strong> the short-video feed on each platform when you decide you have had enough. Unlike typical app blockers, ShieldBrain never blocks the entire app — you keep your DMs, chats, stories, search and normal videos, and lose only the infinite-scroll trap.</p>
+      <p style="margin-top:12px"><strong>Who it is for:</strong> students who want to study without distraction, professionals fighting doomscrolling at work, parents helping kids reduce short-video addiction, and anyone doing a <a href="guides/dopamine-detox-guide.html">dopamine detox</a> or rebuilding their attention span.</p>
+      <p style="margin-top:12px"><strong>When to use it:</strong> start by letting ShieldBrain count for a few days to see the honest number, then turn on blocking for the platforms that pull you in most. You can pause counting or unblock any platform at any time — your rules, your control.</p>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section id="features">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Features</p>
+        <h2>See the truth. Then stop the scroll.</h2>
+        <p>You can't fix what you don't measure. ShieldBrain measures first — then gives you a one-tap way out.</p>
+      </div>
+      <div class="grid cols-3">
+        <div class="card">
+          <p class="icon" aria-hidden="true">📊</p>
+          <h3>Live reels counter</h3>
+          <p>A silent, automatic count of every Reel, Short and TikTok you watch today — plus lifetime totals and the estimated time it cost you. The moment you see "482 reels today", something changes.</p>
+          <a class="more" href="guides/reels-counter-how-many-reels-do-i-watch.html">How many reels do you watch? →</a>
+        </div>
+        <div class="card">
+          <p class="icon" aria-hidden="true">🚫</p>
+          <h3>Feed blocker, not app blocker</h3>
+          <p>Block YouTube Shorts, Instagram Reels, TikTok scrolling, Facebook Reels and Snapchat Spotlight instantly — while DMs, stories and normal videos keep working.</p>
+          <a class="more" href="guides/how-to-block-instagram-reels.html">How feed blocking works →</a>
+        </div>
+        <div class="card">
+          <p class="icon" aria-hidden="true">📱</p>
+          <h3>Per-app breakdown</h3>
+          <p>"Where they went" shows exactly which app pulls you in — Instagram, YouTube, TikTok, Facebook or Snapchat — so you know which feed to block first.</p>
+        </div>
+        <div class="card">
+          <p class="icon" aria-hidden="true">📈</p>
+          <h3>Weekly &amp; monthly trends</h3>
+          <p>A weekly chart and a monthly calendar show your scrolling history at a glance — and the day your brain fries. Watch the bars shrink as you take back control.</p>
+        </div>
+        <div class="card">
+          <p class="icon" aria-hidden="true">🧠</p>
+          <h3>Brain Report Card</h3>
+          <p>Every week, Brainy grades your scrolling from A+ down. See your total scrolled, time spent, cleanest and heaviest day — and share your grade with friends.</p>
+        </div>
+        <div class="card">
+          <p class="icon" aria-hidden="true">🔐</p>
+          <h3>100% private</h3>
+          <p>No account. No cloud. No ads. Nothing leaves your phone, ever. The Accessibility Service is used only to detect short-video feeds and count scrolls.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLATFORM BLOCKING ============ -->
+  <section class="alt" id="platforms">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Supported platforms</p>
+        <h2>Block the feed on all five short-video platforms</h2>
+        <p>Turn any platform on or off with a single tap. Each guide below shows exactly how it works.</p>
+      </div>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Block YouTube Shorts</h3>
+          <p>Remove the Shorts feed while keeping normal YouTube videos, subscriptions and search.</p>
+          <a class="more" href="guides/how-to-block-youtube-shorts.html">How to block YouTube Shorts →</a>
+        </div>
+        <div class="card">
+          <h3>Block Instagram Reels</h3>
+          <p>Stop the Reels feed without deleting Instagram. DMs, stories and your normal feed stay.</p>
+          <a class="more" href="guides/how-to-block-instagram-reels.html">How to block Instagram Reels →</a>
+        </div>
+        <div class="card">
+          <h3>Block TikTok scrolling</h3>
+          <p>Break the endless For You scroll without uninstalling TikTok completely.</p>
+          <a class="more" href="guides/how-to-block-tiktok-scrolling.html">How to block TikTok scrolling →</a>
+        </div>
+        <div class="card">
+          <h3>Block Facebook Reels</h3>
+          <p>Cut the Reels feed out of Facebook while keeping groups, marketplace and messages.</p>
+          <a class="more" href="guides/how-to-block-facebook-reels-snapchat-spotlight.html">How to block Facebook Reels →</a>
+        </div>
+        <div class="card">
+          <h3>Block Snapchat Spotlight</h3>
+          <p>Keep chatting with friends on Snapchat — without falling into the Spotlight feed.</p>
+          <a class="more" href="guides/how-to-block-facebook-reels-snapchat-spotlight.html">How to block Spotlight →</a>
+        </div>
+        <div class="card">
+          <h3>All of them at once</h3>
+          <p>Doing a full reset? Turn on blocking for all five platforms and go cold turkey on short-form video.</p>
+          <a class="more" href="guides/how-to-stop-doomscrolling.html">How to stop doomscrolling →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section id="how-it-works">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">How it works</p>
+        <h2>From install to focus in three steps</h2>
+      </div>
+      <ol class="steps" style="list-style:none">
+        <li class="step">
+          <span class="num" aria-hidden="true">1</span>
+          <h3>Install ShieldBrain</h3>
+          <p>Download ShieldBrain free from Google Play. No account, no sign-up — it works immediately.</p>
+        </li>
+        <li class="step">
+          <span class="num" aria-hidden="true">2</span>
+          <h3>Enable the Accessibility Service</h3>
+          <p>One-time Android permission that lets ShieldBrain detect Reels, Shorts and TikTok feeds so it can count and block them. Used for nothing else — nothing leaves your phone.</p>
+        </li>
+        <li class="step">
+          <span class="num" aria-hidden="true">3</span>
+          <h3>Watch the counter drop</h3>
+          <p>See your honest daily number, then flip the block toggle for the platforms that steal your time. Your focus comes back.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ SCREENSHOTS ============ -->
+  <section class="alt" id="screenshots">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Screenshots</p>
+        <h2>Inside ShieldBrain</h2>
+        <p>Meet Brainy — he feels every scroll.</p>
+      </div>
+      <div class="gallery" role="list">
+        <figure role="listitem">
+          <img src="images/shieldbrain-reels-counter-dashboard.png" alt="ShieldBrain Today tab counting 38 reels scrolled, about 49 minutes, with per-app breakdown" loading="lazy" width="942" height="1671">
+          <figcaption>Every reel you scroll. Counted.</figcaption>
+        </figure>
+        <figure role="listitem">
+          <img src="images/shieldbrain-brainy-mascot-counter.png" alt="Brainy, ShieldBrain's pink brain mascot, above today's reel count" loading="lazy" width="942" height="1671">
+          <figcaption>Meet Brainy. He feels every scroll.</figcaption>
+        </figure>
+        <figure role="listitem">
+          <img src="images/shieldbrain-daily-reels-time-stats.png" alt="ShieldBrain converting 38 reels into roughly 49 minutes of life spent" loading="lazy" width="942" height="1671">
+          <figcaption>Reels translated into minutes of your life.</figcaption>
+        </figure>
+        <figure role="listitem">
+          <img src="images/shieldbrain-per-app-breakdown.png" alt="Where they went: per-app reel counts for Instagram, YouTube Shorts, TikTok, Facebook and Snapchat Spotlight" loading="lazy" width="942" height="1671">
+          <figcaption>Know which app pulls you in.</figcaption>
+        </figure>
+        <figure role="listitem">
+          <img src="images/shieldbrain-weekly-trends-chart.png" alt="ShieldBrain weekly Trends bar chart of daily reels scrolled" loading="lazy" width="1024" height="1536">
+          <figcaption>See the day your brain fries.</figcaption>
+        </figure>
+        <figure role="listitem">
+          <img src="images/shieldbrain-monthly-calendar-mood-diary.png" alt="ShieldBrain monthly calendar showing Brainy's mood for each day of July 2026" loading="lazy" width="1024" height="1536">
+          <figcaption>Your month, as Brainy's mood diary.</figcaption>
+        </figure>
+        <figure role="listitem">
+          <img src="images/shieldbrain-brain-report-card.png" alt="Weekly Brain Report Card with grade A, total scrolled, time spent, and a share button" loading="lazy" width="1024" height="1536">
+          <figcaption>Get your weekly Brain Report Card.</figcaption>
+        </figure>
+        <figure role="listitem">
+          <img src="images/shieldbrain-privacy-settings-light-mode.png" alt="ShieldBrain settings in light mode: no account, no cloud, tracking runs on-device" loading="lazy" width="860" height="1828">
+          <figcaption>Nothing leaves your phone. Ever.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENEFITS ============ -->
+  <section id="benefits">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Benefits</p>
+        <h2>What you get back when the scroll stops</h2>
+        <p>Reels, Shorts and TikToks are engineered to hijack your dopamine. A "5-minute break" becomes hours of doomscrolling. Here's what changes when it stops.</p>
+      </div>
+      <div class="grid cols-3">
+        <div class="card"><p class="icon" aria-hidden="true">⚡</p><h3>Save 1–3 hours a day</h3><p>The average heavy scroller loses hours daily. 38 reels alone ≈ 49 minutes. Get that time back for things you actually care about.</p></div>
+        <div class="card"><p class="icon" aria-hidden="true">🧠</p><h3>Rebuild attention span</h3><p>Short-form video trains your brain to expect a new hit every few seconds. Removing the feed lets deep focus recover.</p></div>
+        <div class="card"><p class="icon" aria-hidden="true">😴</p><h3>Sleep better</h3><p>No more 1 a.m. doomscrolling. Block the feeds and midnight sessions simply can't happen.</p></div>
+        <div class="card"><p class="icon" aria-hidden="true">📚</p><h3>Read, study, finish tasks</h3><p>Students and professionals report finally finishing what they start once the scroll trap is gone.</p></div>
+        <div class="card"><p class="icon" aria-hidden="true">💪</p><h3>Break the addiction loop</h3><p>Measurement plus friction is how habits break: see the number, block the feed, watch the count drop.</p></div>
+        <div class="card"><p class="icon" aria-hidden="true">🎯</p><h3>Stay connected</h3><p>You never lose DMs, chats, stories or normal videos. You quit the algorithm, not your friends.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMPARISON ============ -->
+  <section class="alt" id="compare">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Why ShieldBrain</p>
+        <h2>Smarter than deleting the app</h2>
+        <p>Most solutions force an all-or-nothing choice. ShieldBrain removes only the part that harms you.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <caption>ShieldBrain vs. common alternatives</caption>
+          <thead>
+            <tr><th scope="col">Approach</th><th scope="col">Stops Reels/Shorts</th><th scope="col">Keeps DMs &amp; stories</th><th scope="col">Shows how much you scroll</th><th scope="col">Effort to maintain</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">ShieldBrain</th><td><span class="yes">✔ Feed-level block</span></td><td><span class="yes">✔ Yes</span></td><td><span class="yes">✔ Counts every reel</span></td><td>One tap per platform</td></tr>
+            <tr><th scope="row">Deleting Instagram / TikTok</th><td><span class="yes">✔</span></td><td><span class="no">✘ You lose everything</span></td><td><span class="no">✘ No</span></td><td>High — most people reinstall</td></tr>
+            <tr><th scope="row">Generic app blockers</th><td><span class="no">✘ Blocks whole app or nothing</span></td><td><span class="no">✘ Blocked too</span></td><td><span class="no">✘ Screen time only</span></td><td>Schedules and rules to manage</td></tr>
+            <tr><th scope="row">Willpower alone</th><td><span class="no">✘ The algorithm wins</span></td><td><span class="yes">✔</span></td><td><span class="no">✘ You underestimate it</span></td><td>Constant</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GUIDES ============ -->
+  <section id="guides">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Guides</p>
+        <h2>Learn how to take back your attention</h2>
+        <p>Practical, step-by-step guides on blocking short-form video and fixing doomscrolling — with or without ShieldBrain.</p>
+      </div>
+      <div class="grid cols-3">
+        <div class="card"><h3><a href="guides/how-to-stop-doomscrolling.html">How to stop doomscrolling</a></h3><p>Why your brain can't stop, and the 5 steps that actually work.</p></div>
+        <div class="card"><h3><a href="guides/how-to-block-youtube-shorts.html">Block YouTube Shorts</a></h3><p>Every way to remove Shorts from YouTube on Android.</p></div>
+        <div class="card"><h3><a href="guides/how-to-block-instagram-reels.html">Block Instagram Reels</a></h3><p>Stop Reels without deleting Instagram or losing DMs.</p></div>
+        <div class="card"><h3><a href="guides/how-to-block-tiktok-scrolling.html">Block TikTok scrolling</a></h3><p>Limit or block the For You feed without uninstalling.</p></div>
+        <div class="card"><h3><a href="guides/reels-counter-how-many-reels-do-i-watch.html">How many reels do you watch?</a></h3><p>Why counting your scrolls is the first step to quitting.</p></div>
+        <div class="card"><h3><a href="guides/dopamine-detox-guide.html">Dopamine detox guide</a></h3><p>A realistic 7-day reset from short-form video.</p></div>
+      </div>
+      <p style="margin-top:24px"><a href="guides/"><strong>Browse all guides →</strong></a></p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="alt" id="faq">
+    <div class="container narrow">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+
+      <details class="faq-item">
+        <summary>What is ShieldBrain?</summary>
+        <div class="answer"><p>ShieldBrain is a free Android app that counts how many Reels, Shorts and TikToks you scroll through each day, and blocks the short-video feed on Instagram, YouTube, TikTok, Facebook and Snapchat. It blocks only the addictive feed — DMs, stories, search and normal videos keep working.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Does ShieldBrain block the whole app?</summary>
+        <div class="answer"><p>No. ShieldBrain blocks only the short-video surface: the Reels feed on Instagram and Facebook, the Shorts feed on YouTube, the endless scroll on TikTok, and Spotlight on Snapchat. Everything else works normally.</p><p><a href="guides/how-to-block-instagram-reels.html">Learn more: how feed-level blocking works →</a></p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Which platforms does ShieldBrain support?</summary>
+        <div class="answer"><p>Five platforms: Instagram Reels, YouTube Shorts, TikTok, Facebook Reels and Snapchat Spotlight. Each can be toggled on or off individually with one tap.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Is ShieldBrain private? Does it collect my data?</summary>
+        <div class="answer"><p>ShieldBrain runs 100% on your device. No account, no sign-up, no cloud, no ads. It does not collect, store, sell or transmit any personal data.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Why does ShieldBrain need the Accessibility Service?</summary>
+        <div class="answer"><p>Android's Accessibility Service is the only reliable way for an app to detect when a short-video feed is on screen. ShieldBrain uses it solely to recognise Reels/Shorts/TikTok feeds, count scrolls and show the block screen. Nothing leaves your phone.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Is ShieldBrain available on iPhone (iOS)?</summary>
+        <div class="answer"><p>No — ShieldBrain is Android-only, because it relies on Android's Accessibility Service to detect and block short-video feeds.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>When does ShieldBrain launch?</summary>
+        <div class="answer"><p>ShieldBrain is currently in closed testing and launches publicly on Google Play in late July 2026.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>How much time can ShieldBrain save me?</summary>
+        <div class="answer"><p>Heavy short-video users typically spend 1–3 hours a day scrolling — in the app's own units, 38 reels ≈ 49 minutes. Counting shows the real number; blocking gives the time back.</p><p><a href="guides/reels-counter-how-many-reels-do-i-watch.html">Learn more: how many reels do you actually watch? →</a></p></div>
+      </details>
+
+      <p style="margin-top:24px"><a href="faq.html"><strong>Read the full FAQ →</strong></a></p>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Stop scrolling. Start living.</h2>
+      <p>Shield your brain from the algorithms built to steal your attention. Free, private, and coming to Google Play in late July 2026.</p>
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.LunarForgeLabs.ShieldBrain" rel="noopener">Get ShieldBrain for Android</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <a class="brand" href="/"><img src="images/shieldbrain-app-icon.png" alt="" width="36" height="36" loading="lazy"> ShieldBrain</a>
+      <p>ShieldBrain – Reels Counter &amp; Shorts Blocker is a free Android app by LunarForge Labs that counts your short-video scrolling and blocks the Reels, Shorts, TikTok, Facebook Reels and Snapchat Spotlight feeds — without blocking the apps themselves.</p>
+    </div>
+    <div>
+      <h4>Guides</h4>
+      <ul>
+        <li><a href="guides/how-to-block-youtube-shorts.html">Block YouTube Shorts</a></li>
+        <li><a href="guides/how-to-block-instagram-reels.html">Block Instagram Reels</a></li>
+        <li><a href="guides/how-to-block-tiktok-scrolling.html">Block TikTok scrolling</a></li>
+        <li><a href="guides/how-to-block-facebook-reels-snapchat-spotlight.html">Block Facebook Reels &amp; Spotlight</a></li>
+        <li><a href="guides/how-to-stop-doomscrolling.html">Stop doomscrolling</a></li>
+        <li><a href="guides/dopamine-detox-guide.html">Dopamine detox</a></li>
+        <li><a href="guides/reduce-screen-time-android.html">Reduce screen time</a></li>
+        <li><a href="guides/reels-counter-how-many-reels-do-i-watch.html">Reels counter</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>App</h4>
+      <ul>
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/#how-it-works">How it works</a></li>
+        <li><a href="/#screenshots">Screenshots</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.LunarForgeLabs.ShieldBrain" rel="noopener">Google Play</a></li>
+        <li><a href="mailto:shieldbrain.app@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 LunarForge Labs. All rights reserved.</span>
+    <span>ShieldBrain is not affiliated with Instagram, YouTube, TikTok, Facebook or Snapchat.</span>
+  </div>
+</footer>
+</body>
+</html>
