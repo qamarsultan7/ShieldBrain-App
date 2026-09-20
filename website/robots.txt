@@ -1,4 +1,4 @@
-# ShieldBrain — robots.txt
+# ShieldBrain â€” robots.txt
 # All crawlers welcome, including AI/LLM crawlers (GEO).
 
 User-agent: *
@@ -35,4 +35,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://shieldbrain.app/sitemap.xml
+Sitemap: https://qamarsultan7.github.io/ShieldBrain-App/sitemap.xml
