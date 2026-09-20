@@ -161,7 +161,7 @@
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="container">
-      <div>
+      <div class="hero-copy">
         <p class="badge"><span class="dot" aria-hidden="true"></span> Launching on Google Play · late July 2026</p>
         <h1>Count every reel you scroll.<br><span class="accent">Then block the feed.</span></h1>
         <p class="subtitle">ShieldBrain is a free <strong>reels counter and shorts blocker for Android</strong>. It shows you exactly how many Reels, Shorts and TikToks you scroll each day — then blocks the endless short-video feed on Instagram, YouTube, TikTok, Facebook and Snapchat <strong>without blocking the whole app</strong>.</p>
@@ -169,6 +169,13 @@
           <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.LunarForgeLabs.ShieldBrain" rel="noopener">Download for Android</a>
           <a class="btn btn-secondary" href="#how-it-works">See how it works</a>
         </div>
+      </div>
+      <div class="hero-phone">
+        <img src="images/shieldbrain-reels-counter-dashboard.png"
+             alt="ShieldBrain Today dashboard on Android showing 38 reels scrolled, about 49 minutes of the day, with a per-app breakdown for Instagram, YouTube Shorts, TikTok, Facebook and Snapchat Spotlight"
+             width="942" height="1671" fetchpriority="high">
+      </div>
+      <div class="hero-meta">
         <p class="hero-note">Free · No account · No ads · 100% on-device · Android only</p>
         <ul class="platform-strip" aria-label="Supported platforms">
           <li>Instagram Reels</li>
@@ -177,11 +184,6 @@
           <li>Facebook Reels</li>
           <li>Snapchat Spotlight</li>
         </ul>
-      </div>
-      <div class="hero-phone">
-        <img src="images/shieldbrain-reels-counter-dashboard.png"
-             alt="ShieldBrain Today dashboard on Android showing 38 reels scrolled, about 49 minutes of the day, with a per-app breakdown for Instagram, YouTube Shorts, TikTok, Facebook and Snapchat Spotlight"
-             width="942" height="1671" fetchpriority="high">
       </div>
     </div>
   </section>
@@ -320,6 +322,9 @@
         <h2>Inside ShieldBrain</h2>
         <p>Meet Brainy — he feels every scroll.</p>
       </div>
+      <div class="gallery-wrap">
+      <button class="gal-btn prev" type="button" aria-label="Scroll screenshots left">‹</button>
+      <button class="gal-btn next" type="button" aria-label="Scroll screenshots right">›</button>
       <div class="gallery" role="list">
         <figure role="listitem">
           <img src="images/shieldbrain-reels-counter-dashboard.png" alt="ShieldBrain Today tab counting 38 reels scrolled, about 49 minutes, with per-app breakdown" loading="lazy" width="942" height="1671">
@@ -353,6 +358,7 @@
           <img src="images/shieldbrain-privacy-settings-light-mode.png" alt="ShieldBrain settings in light mode: no account, no cloud, tracking runs on-device" loading="lazy" width="860" height="1828">
           <figcaption>Nothing leaves your phone. Ever.</figcaption>
         </figure>
+      </div>
       </div>
     </div>
   </section>
@@ -514,5 +520,35 @@
     <span>ShieldBrain is not affiliated with Instagram, YouTube, TikTok, Facebook or Snapchat.</span>
   </div>
 </footer>
+<script>
+(function () {
+  document.documentElement.classList.add('js-anim');
+
+  var figures = document.querySelectorAll('.gallery figure');
+  figures.forEach(function (f, i) { f.style.setProperty('--d', (i % 4) * 0.09 + 's'); });
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -6% 0px' });
+  figures.forEach(function (f) { io.observe(f); });
+  document.querySelectorAll('.section-head').forEach(function (h) { io.observe(h); });
+
+  var gal = document.querySelector('.gallery');
+  if (gal) {
+    var step = function () {
+      var fig = gal.querySelector('figure');
+      return fig ? fig.getBoundingClientRect().width + 22 : gal.clientWidth * 0.7;
+    };
+    document.querySelector('.gal-btn.prev').addEventListener('click', function () {
+      gal.scrollBy({ left: -step(), behavior: 'smooth' });
+    });
+    document.querySelector('.gal-btn.next').addEventListener('click', function () {
+      gal.scrollBy({ left: step(), behavior: 'smooth' });
+    });
+  }
+})();
+</script>
 </body>
 </html>
