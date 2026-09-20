@@ -173,6 +173,7 @@ h2 { font-size: clamp(1.6rem, 4vw, 2.3rem); line-height: 1.2; letter-spacing: -.
 }
 section.alt .card { background: var(--bg); }
 .card .icon { font-size: 1.8rem; line-height: 1; }
+.card .platform-icon { width: 48px; height: 48px; object-fit: contain; }
 .card h3 { margin: 12px 0 8px; font-size: 1.12rem; }
 .card p { color: var(--text-muted); font-size: .97rem; }
 .card a.more { display: inline-block; margin-top: 10px; font-weight: 600; font-size: .92rem; }

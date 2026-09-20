@@ -1,4 +1,4 @@
-# ShieldBrain â€” robots.txt
+# ShieldBrain — robots.txt
 # All crawlers welcome, including AI/LLM crawlers (GEO).
 
 User-agent: *
