@@ -35,4 +35,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://qamarsultan7.github.io/ShieldBrain-App/sitemap.xml
+Sitemap: https://shieldbrain-app.lunarforge.dev/sitemap.xml
